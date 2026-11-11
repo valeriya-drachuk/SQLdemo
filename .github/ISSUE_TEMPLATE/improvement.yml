@@ -1,0 +1,41 @@
+# The form students fill in for a new improvement.
+# How to use it: see "How each improvement works" in docs/COURSE_MAP.md.
+name: Improvement brief
+description: Something the app is missing or could do better.
+title: "Improvement: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What's wrong or missing today, in one or two sentences.
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who
+      description: Who notices it, and how often.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done means
+      description: What someone will be able to do or see when it's finished. Be specific.
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: How I'll test
+      description: The exact steps you'll take to prove it works.
+    validations:
+      required: true
+  - type: textarea
+    id: not-doing
+    attributes:
+      label: Not doing yet
+      description: What you're deliberately leaving for later, and why. This keeps it small enough to finish in a week.
+    validations:
+      required: true

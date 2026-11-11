@@ -1,0 +1,40 @@
+# The form students fill in when something in the app is broken.
+# How to use it: see "How each improvement works" in docs/COURSE_MAP.md.
+name: Bug report
+description: Something in the app that should work doesn't.
+title: "Bug: "
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to repeat
+      description: The exact steps (or question) that make it happen.
+      placeholder: Ask "why did we overspend so much in October"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: What should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: What actually happened. Paste the error or describe what you saw.
+    validations:
+      required: true
+  - type: input
+    id: often
+    attributes:
+      label: How often / who
+      description: Every time or sometimes? Who runs into it?
+  - type: textarea
+    id: fixed
+    attributes:
+      label: Fixed means
+      description: What you'll check to know it's fixed.
+    validations:
+      required: true

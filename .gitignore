@@ -1,0 +1,16 @@
+# Secrets: never commit these
+.env
+
+# DuckDB temp files
+data/*.duckdb.wal
+
+__pycache__/
+*.pyc
+.DS_Store
+
+# Saved chats: they stay on this computer, not on GitHub
+chats/
+
+# Uploaded data: stays on this computer, not on GitHub (like saved chats)
+data/uploads.duckdb
+data/uploads.duckdb.wal

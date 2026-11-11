@@ -1,0 +1,7 @@
+anthropic>=0.40
+duckdb>=1.1
+numpy>=1.26
+pandas>=2.2
+python-dotenv>=1.0
+streamlit>=1.50
+ipykernel>=6.29
